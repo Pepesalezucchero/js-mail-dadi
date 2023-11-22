@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-h1, p {
+.position {
     text-align: center;
     margin: 20px 0;
 }
