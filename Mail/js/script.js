@@ -29,7 +29,7 @@ buttonSend.addEventListener("click",
                 alert("Benvenuto");
 
             } else {
-                document.getElementById("negative").innerHTML = "Accesso negato!"
+                document.getElementById("negative").innerHTML = "Accesso negato!";
             }   
         }
     }    
