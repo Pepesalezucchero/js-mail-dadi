@@ -18,7 +18,7 @@ buttonSend.addEventListener("click",
 
         if (userNumber > pcNumber) {
             document.getElementById("lucky").innerHTML = "Vittoria!";
-            alert("Hai vinto!");
+            alert("Hai avuto culo!");
 
         } else if (userNumber === pcNumber) {
             document.getElementById("lucky").innerHTML = "Pareggio...";
@@ -26,7 +26,7 @@ buttonSend.addEventListener("click",
 
         } else {
             document.getElementById("lucky").innerHTML = "Sconfitta :(";
-            alert("Sconfitta :(");
+            alert("Non hai avuto culo :(");
         }
 
         document.getElementById("user").innerHTML = userNumber;
