@@ -9,3 +9,7 @@ console.log(userSubscribe);
 
 //chiedo la mail all'utente che cerca di accedere alla pagina
 
+const userEmail = document.getElementById("email-user");
+
+//aggiungo il bottone
+const buttonSend = document.getElementById("email-btn")
