@@ -10,6 +10,17 @@ console.log(userSubscribe);
 //chiedo la mail all'utente che cerca di accedere alla pagina
 
 const userEmail = document.getElementById("email-user");
+let userEmailController;
 
 //aggiungo il bottone
-const buttonSend = document.getElementById("email-btn")
+const buttonSend = document.getElementById("email-btn");
+buttonSend.addEventListener("click",
+
+    function () {
+        userEmailController = userEmail.value;
+        console.log(userEmailController);
+
+
+    }
+
+);
