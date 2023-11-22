@@ -3,20 +3,33 @@ Stabilire il vincitore, in base a chi fa il punteggio più alto.
 */
 
 //generiamo dei numeri casuali, per il giocatore e per il computer
-let userNumber = Math.floor(Math.random() * 6 + 1);
-console.log("Numero uscito all'utente", userNumber);
-
-let pcNumber = Math.floor(Math.random() * 6 + 1);
-console.log("Numero uscito al pc", pcNumber);
 
 //stabiliamo il vincitore confrontando i numeri dei dadi ottenuti, il più alto vince
+const buttonSend = document.getElementById("start-btn");
+buttonSend.addEventListener("click",
 
-if (userNumber > pcNumber) {
-    alert("Hai vinto!");
+    function () {
 
-} else if (userNumber === pcNumber) {
-    alert("Parità");
+        let userNumber = Math.floor(Math.random() * 6 + 1);
+        console.log("Numero uscito all'utente", userNumber);
 
-} else {
-    alert("Sconfitta :(");
-}
+        let pcNumber = Math.floor(Math.random() * 6 + 1);
+        console.log("Numero uscito al pc", pcNumber);
+
+        if (userNumber > pcNumber) {
+            document.getElementById("lucky").innerHTML = "Vittoria!";
+            alert("Hai vinto!");
+
+        } else if (userNumber === pcNumber) {
+            document.getElementById("lucky").innerHTML = "Pareggio...";
+            alert("Parità");
+
+        } else {
+            document.getElementById("lucky").innerHTML = "Sconfitta :(";
+            alert("Sconfitta :(");
+        }
+
+        document.getElementById("user").innerHTML = userNumber;
+        document.getElementById("pc").innerHTML = pcNumber;
+    }
+);
