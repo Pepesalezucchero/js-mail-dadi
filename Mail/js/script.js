@@ -6,3 +6,6 @@ stampa un messaggio appropriato sull’esito del controllo.
 
 const userSubscribe = ["pinoilfagiolino@gmail.com", "milanochebellamano@gmail.com", "ginalapaperina@gmail.com", "dulcisinfundo@hotmail.it"];
 console.log(userSubscribe);
+
+//chiedo la mail all'utente che cerca di accedere alla pagina
+
