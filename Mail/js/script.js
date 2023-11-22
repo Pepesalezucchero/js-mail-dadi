@@ -16,11 +16,21 @@ let userEmailController;
 const buttonSend = document.getElementById("email-btn");
 buttonSend.addEventListener("click",
 
+    //controllo che, all'inserimento della mail, se non presente tra quelle registrate mi impedisce l'accesso
     function () {
         userEmailController = userEmail.value;
         console.log(userEmailController);
 
+        for (let i = 0; i < userSubscribe.length; i++) {
 
-    }
+            let userControl = userSubscribe[i];
 
+            if(userEmailController === userControl){;
+                alert("Benvenuto");
+
+            } else {
+                document.getElementById("negative").innerHTML = "Accesso negato!"
+            }   
+        }
+    }    
 );
