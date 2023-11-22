@@ -24,12 +24,13 @@ buttonSend.addEventListener("click",
         for (let i = 0; i < userSubscribe.length; i++) {
 
             let userControl = userSubscribe[i];
+            console.log(userControl);
 
             if(userEmailController === userControl){;
                 alert("Benvenuto");
 
             } else {
-                document.getElementById("negative").innerHTML = "Accesso negato!";
+                document.getElementById("access").innerHTML = "Accesso negato!";
             }   
         }
     }    
